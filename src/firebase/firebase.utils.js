@@ -11,6 +11,12 @@ const config = {
     messagingSenderId: "648923026680",
     appId: "1:648923026680:web:68462797631f024fc1d70d",
     measurementId: "G-YXT87GYPPG"
+};
+
+export const createUserProfileDocument = async (userAuth, addidtionalData) => {
+    if (!userAuth) return;
+
+    console.log(firestore.doc('users/128lgbt'))
 }
 
 firebase.initializeApp(config);
